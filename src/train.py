@@ -58,7 +58,7 @@ class ProjectAgent:
             return self.greedy_action(self.model,observation)
 
     def save(self):
-        self.path ="hiv_patient_model.pkl"
+        self.path ="trained_model.pkl"
         torch.save(self.model.state_dict(), self.path)
         return 
 
